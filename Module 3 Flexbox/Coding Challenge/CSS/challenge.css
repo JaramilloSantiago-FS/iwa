@@ -1,0 +1,100 @@
+/* Code challenge
+Examaple of:
+  - Specificity - Line 12
+  - Inheritance - Line 19
+  - Inline element - Line 29
+  - Block-level element - Line 34
+Using Flexbox: - Line 68
+  - Center the image horizontally
+  - Center the image Vertically
+
+Push 2 elements apart - Line 78
+Validate your html and CSS using the W3C Validator
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 90%; /* Defines a width so auto margin works */
+  max-width: 1200px; /* Keeps it from getting too wide */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 10px; /* Adds some space inside */
+}
+
+/* This is an example of Inheritance */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; /* Equals to 16px */
+  font-weight: 100;
+  background-color: black;
+  color: white;
+}
+
+/* Example of inline and block elements */
+h1 {
+  /* Keeps the element inline but doesn’t allow full box styling (no height, no top/bottom margins). */
+  display: inline;
+
+  /* Keeps it inline but allows block-like styling, meaning you can apply width, height, padding, and margins without issues. */
+  /* inline-block; */
+
+  font-weight: normal;
+  background-color: yellow;
+  color: black;
+}
+
+h2 {
+  color: white;
+}
+
+/* img {
+  display: block; /* Makes margin: auto work
+  margin: 0 auto; /* Centers horizontally 
+  width: 50%; /* Optional: Set a width 
+} */
+
+/* I am going to comment the previous one to show here flexbox 
+
+Things to remember:
+By default, when you use display: flex;, these properties are automatically set:
+  .container {
+  display: flex; - Default Flexbox behavior
+  flex-direction: row;  - Items are placed in a row (left to right) 
+  justify-content: flex-start;  - Items align to the left 
+  align-items: stretch;   Items stretch to match the container's height
+}
+*/
+
+/* Center image horizontally and vertically */
+#coffe-shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Push elements apart. */
+  /* gap: 2rem;  This also would push elements apart.  */
+  align-items: center;
+}
+
+/* change the color to the link */
+a {
+  display: block; /* Ensures it behaves like a block element so I can apply a margin botton between text and image */
+  /* text-decoration: none; */
+  text-decoration: underline;
+  color: gold;
+  margin-bottom: 50px;
+}
+
+/* Hover Pseudo class for my link */
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}

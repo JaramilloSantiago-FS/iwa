@@ -1,0 +1,171 @@
+/* Code challenge
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 90%; /* Defines a width so auto margin works */
+  max-width: 1200px; /* Keeps it from getting too wide */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 10px 0; /* Adds some space inside */
+}
+
+/* This is an example of Inheritance */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; /* Equals to 16px */
+  font-weight: 100;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Match the wrapper */
+  margin: 0 auto; /* Center it */
+  padding: 10px 0;
+}
+
+#text-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  border: 0;
+  gap: 0.2rem;
+}
+
+#search-form button {
+  margin: 1rem;
+}
+
+#search-form input {
+  width: 300px;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+h1,
+h2 {
+  font-weight: normal;
+  color: white;
+}
+
+/* Center image horizontally and vertically */
+#coffe-shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+}
+
+/* change the color to the link */
+a {
+  display: block; /* Ensures it behaves like a block element so I can apply a margin botton between text and image */
+  /* text-decoration: none; */
+  text-decoration: underline;
+  color: gold;
+  margin-bottom: 50px;
+}
+
+/* Hover Pseudo class for my link */
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* Form Styles */
+/* All forms */
+form {
+  color: white;
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+}
+
+/* all divs inside the forms */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* This is just gonna select the first children of the fomr. So for the first divs. So if you would have nested divs inside the main divs it would not apply for those */
+form > div {
+  margin-bottom: 1rem;
+}
+
+/* this is gonna make all labels to display as blocks so is gonna push the nxt element under */
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* Same for inputs but lets make the inputs same width */
+
+input {
+  display: block;
+  width: 100%; /* This is gonna make the inputs same width  */
+  padding: 0.3rem 0.75rem; /*top & bottom, left & right  */
+  border-radius: 0.25rem;
+}
+
+/* Checkboxes */
+/* To select it Lets select an attribute from the labels */
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* my inputs have a 100% wiidth so im gonna jsut change the width of my age input to make it more obvius that users only need space for 2 characters */
+input[type="number"] {
+  width: 30%;
+}
+
+/* child combinator */
+#form-check > label {
+  display: inline-block;
+}
+
+/* Button styles */
+form > button {
+  /* Only buttons that are inside forms */
+  background-color: yellow;
+  color: black;
+  padding: 0.3rem 2rem;
+  border: 2px solid yellow;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer; /* this makes the hand show up when you hover  */
+}
+
+button:hover {
+  border: 2px solid yellow;
+  background-color: transparent;
+  color: yellow;
+}
+
+/* by default the browser makes my form styles like the text different. i Want my own */
+
+textarea,
+input {
+  font-family: inherit; /* this makes inherit the font from the body */
+  font-size: 80%; /*this makes it 80% of what i already defined in my body  */
+  border: none;
+}

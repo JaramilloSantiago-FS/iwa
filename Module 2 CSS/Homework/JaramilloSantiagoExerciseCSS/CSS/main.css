@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; /* Ensures padding & border are included in the element's total size */
+}
+
+#wrapper {
+  width: 90%; /* Defines a width so auto margin works */
+  max-width: 1200px; /* Keeps it from getting too wide */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 10px; /* Adds some space inside */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; /* 1 REM = Equals to 16px */
+  font-weight: 100;
+  text-align: justify;
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: normal;
+  text-shadow: 2px 2px 3px black;
+  background-color: yellow;
+  color: black;
+  padding: 0.5rem;
+}
+
+img {
+  display: block; /* Makes margin work */
+  margin: 0 auto; /* Centers horizontally */
+  width: 50%;
+  border: 0.5px solid white;
+  border-radius: 100px; /* I tried to make a circle with 50% but my image was not perfectly square  */
+  /* box-shadow: 5px 5px 5px whitesmoke; - I didnt like it*/
+}
+
+/* change the color to the link */
+a {
+  /* text-decoration: underline; - I didnt like it*/
+  text-decoration: none;
+  color: gold;
+  margin-bottom: 50px;
+}
+
+/* Hover Pseudo class for my link */
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+ul {
+  list-style: none; /*This is gonna make rid of the bullets in my list that I have by default */
+  padding: 0; /* Removes default padding of lists so it can be align with the rest of the content */
+}

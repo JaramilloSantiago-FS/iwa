@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box; /* Ensures padding & border are included in the element's total size */
+}
+
+#wrapper {
+  width: 90%; /* Defines a width so auto margin works */
+  max-width: 1200px; /* Keeps it from getting too wide */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 10px; /* Adds some space inside */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem; /* 1 REM = Equals to 16px */
+  font-weight: 100;
+  text-align: justify;
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: normal;
+  text-shadow: 2px 2px 3px green;
+  /* background-color: yellow;  */
+  color: white;
+}
+
+img {
+  border: 0.5px solid white;
+  border-radius: 100px;
+}
+
+#soccer-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+}
+
+#soccer-photo img {
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+/* Hover Pseudo class for my links */
+a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+ul {
+  list-style: none; /* Removes the default bullet points from the list */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Places items in a row */
+  justify-content: space-evenly; /* Spreads items evenly */
+  align-items: center;
+  gap: 2rem;
+}
+
+li {
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+}

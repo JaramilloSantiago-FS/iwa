@@ -1,0 +1,63 @@
+/* This is my CSS */
+* {
+  box-sizing: border-box;
+  /* If you give an element a width to be 300px and you go to the browser to inspect it is gonna be 300px + padding + border + margin so is gonna be bigger. Theres a way to solve this with a property called box-sizing. We need an asterisc * and put it on the top of the page. The * will select all the elements in the page. Thats why the *  is mainly use just for this property. 
+    - box-sizing has 2 values
+        - content-box (which is the default value),
+        - border-box (which is the one we are gonna select). When this is enable the browser is gonna calculate the padding, border, and margin to adjust and respect the total width that you select */
+}
+
+#wrapper {
+  /* width: 90%; */
+  border: 5px solid red;
+  margin: auto;
+  padding: 1.25em; /* This is to give it some space to the text and the border */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 1rem; /* REM means root font-size and q rem equals to 16px which is consider the default font size. The problem of using pixels is that If users change the font size in their browser settings, then users wont be able to see any changes. So for usability, is better to use rem.  */
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  text-align: center; /* this is to align the text but I dont want to */
+  width: 18.75rem; /* Is good practice to use REM for Margin */
+  padding: 1.25rem; /* Is good practice to use REM for padding, that equals 20px */
+  border: 2px solid black;
+  margin: 1.25rem; /* Is good practice to use REM for Margin */
+  box-shadow: 5px 5px 5px green; /* First value is the X (the left side), Second is the bottom, Third is the Spread (the effect) */
+  text-shadow: 2px 2px 2px green; /* text-shadow works the same way  */
+  border-radius: 1rem; /* Is good practice to use REM, that equals 20px */
+}
+
+h2 {
+  display: inline-block;
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  color: white;
+  background-color: green;
+  /* width: 30%;  */
+  /* padding: 1.25rem; that equals 20px */
+  border: 2px solid black;
+}
+
+a {
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none; /* This disables the link to be by default blue before clicked and purple after */
+  color: green;
+}
+
+a:hover {
+  color: blueviolet; /* Change the behavior when the user has hover the link */
+}
+
+ul {
+  /* list-style: none;  This is gonna make rid of the bullets in my list that I have by default */
+
+  list-style: circle; /* If we want to change them with something else, like in this example circles */
+}
