@@ -6,7 +6,7 @@
   width: 90%; /* Defines a width so auto margin works */
   max-width: 1200px; /* Keeps it from getting too wide */
   margin: 0 auto; /* Centers the wrapper */
-  padding: 10px; /* Adds some space inside */
+  padding: 10px 0; /* Adds some space inside */
 }
 
 body {
@@ -21,10 +21,13 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Match the wrapper */
+  margin-bottom: 2rem;
+  padding: 10px 0;
 }
 
 h1 {
@@ -48,12 +51,16 @@ img {
 }
 
 #soccer-photo img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   margin-bottom: 3rem;
 }
 
 a {
   text-decoration: none;
   margin-bottom: 50px;
+  color: yellow;
 }
 
 /* Hover Pseudo class for my links */
@@ -62,14 +69,19 @@ a:hover {
   color: yellow;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 ul {
-  list-style: none; /* Removes the default bullet points from the list */
-  padding: 0; /* Removes default padding */
   display: flex; /* Enables Flexbox */
+  list-style: none; /* Removes the default bullet points from the list */
   flex-direction: row; /* Places items in a row */
   justify-content: space-evenly; /* Spreads items evenly */
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 li {
@@ -79,4 +91,95 @@ li {
 li a {
   text-decoration: none;
   color: whitesmoke;
+}
+
+/* Form Styles */
+/* All forms */
+form {
+  color: white;
+  /* border: 1px solid whitesmoke;  */
+  width: 100%;
+  max-width: 1200px; /* Match the wrapper */
+  margin-bottom: 2rem;
+  padding: 10px 0;
+}
+
+/* all divs inside the forms */
+form div {
+  margin-bottom: 1rem;
+}
+
+/* This is just gonna select the first children of the fomr. So for the first divs. So if you would have nested divs inside the main divs it would not apply for those */
+form > div {
+  margin-bottom: 1rem;
+}
+
+/* this is gonna make all labels to display as blocks so is gonna push the next element under */
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* Same for inputs but lets make the inputs same width */
+
+input {
+  display: block;
+  width: 100%; /* This is gonna make the inputs same width  */
+  padding: 0.3rem 0.75rem; /*top & bottom, left & right  */
+  border-radius: 0.25rem;
+}
+
+/* Checkboxes */
+/* To select it Lets select an attribute from the labels */
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  accent-color: yellow;
+}
+
+/* child combinator */
+#form-check > label {
+  display: inline-block;
+}
+
+/* Button styles */
+form > button {
+  /* Only buttons that are inside forms */
+  background-color: yellow;
+  color: black;
+  /* padding: 0.3rem 2rem; */
+  border: 2px solid yellow;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer; /* this makes the hand show up when you hover  */
+  width: 100%;
+  max-width: 1200px; /* Match the wrapper */
+  margin-bottom: 2rem;
+  padding: 10px 0;
+}
+
+button:hover {
+  border: 2px solid yellow;
+  background-color: transparent;
+  color: yellow;
+}
+
+/* by default the browser makes my form styles like the text different. i Want my own */
+
+textarea,
+input {
+  font-family: inherit; /* this makes inherit the font from the body */
+  font-size: 80%; /*this makes it 80% of what I already defined in my body  */
+  border: none;
+  border-radius: 5px;
+}
+
+#message {
+  font-family: inherit; /* this makes inherit the font from the body */
+  font-size: 80%;
+  border: none;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
 }

@@ -46,11 +46,85 @@
         <!-- Checkbox for stay login -->
         <!--Im going to swap the order of inpout and label to make the checkbox show first -->
         <div id="form-check">
-          <input type="checkbox" />
+          <input type="checkbox" id="stay-login" />
           <label for="stay-login">Stay login</label>
         </div>
 
         <!-- BUTTON
         You can use this input or a button whatever you want
         <input type="submit" value="login" /> -->
-        <!-- Here is butotn which is a
+        <!-- Here is butotn which is a cleaner way -->
+        <button type="submit">Login</button>
+      </form>
+      <h2>About</h2>
+      <p>
+        ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ipsam modi
+        alias voluptatibus animi dolor laboriosam qui, ipsa odit? Consequatur
+        tenetur dignissimos, sapiente ipsam quis qui, delectus, ea odio eaque
+        temporibus ex? Maiores fugit nobis, pariatur at, voluptates tempora ipsa
+        labore dolores deleniti sed odit sit incidunt blanditiis inventore et
+        accusantium omnis nostrum! Nam quisquam sunt ad enim voluptatibus libero
+        dolore atque numquam ea reiciendis, qui ratione.
+      </p>
+
+      <h3>RSVPS</h3>
+      <p>
+        <a href="http://fullsail.com" target="_blank"
+          >If you want to RSVP click here</a
+        >
+      </p>
+      <p id="coffe-shop">
+        <img src="Images/test.jpg" alt="man working on his computer" />
+      </p>
+
+      <h3>Contact US</h3>
+      <!-- CONTACT FORM -->
+      <form>
+        <!-- First name -->
+        <div>
+          <label for="firstname">Enter your name</label>
+          <input type="text" id="firstname" required />
+        </div>
+
+        <!-- Last name -->
+        <div>
+          <label for="lastname">Enter your Last name</label>
+          <input type="text" id="lastname" required />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <!-- Age -->
+        <div>
+          <label for="age">Enter your age</label>
+          <input type="number" id="age" required min="1" max="100" />
+        </div>
+
+        <!-- Message -->
+        <!--Message has a different input. Get rid of the input and type textarea -->
+        <div>
+          <label for="message">Enter your message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+            minlength="200"
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <!-- Button -->
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- JavaScript file linked below -->
+    <!-- JavaScript should be placed before closing body for better performance -->
+    <script src="script.js"></script>
+  </body>
+</html>

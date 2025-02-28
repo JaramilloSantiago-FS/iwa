@@ -21,6 +21,7 @@
             <li><a href="#origin">Origin</a></li>
             <li><a href="#banned-practices">Banned practices</a></li>
             <li><a href="#first-competitions">First Competitions</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -187,6 +188,55 @@
             purposes between England and Scotland".[27]
           </p>
         </section>
+        <section id="contact">
+          <h2>Contact US</h2>
+
+          <!-- CONTACT FORM -->
+          <form>
+            <!-- First name -->
+            <div>
+              <label for="firstname">Enter your name</label>
+              <input type="text" id="firstname" required />
+            </div>
+
+            <!-- Last name -->
+            <div>
+              <label for="lastname">Enter your Last name</label>
+              <input type="text" id="lastname" required />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email">Enter your email</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <!-- Message -->
+            <!--Message has a different input. Get rid of the input and type textarea -->
+            <div>
+              <label for="message">Enter your message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
+            </div>
+
+            <!-- Checkbox for stay login -->
+            <!--Im going to swap the order of inpout and label to make the checkbox show first -->
+            <div id="form-check">
+              <input type="checkbox" id="stay-login" />
+              <label for="stay-login">Stay login</label>
+            </div>
+
+            <!-- Button -->
+            <button type="submit">Send</button>
+          </form>
+        </section>
       </main>
       <!-- This is my footer -->
       <footer>
@@ -194,10 +244,13 @@
           <a
             href="https://en.wikipedia.org/wiki/History_of_association_football"
             target="_blank"
-            >Source ></a
+            >Source</a
           >
         </p>
       </footer>
     </div>
+    <!-- JavaScript file linked below -->
+    <!-- JavaScript should be placed before closing body for better performance -->
+    <script src="JS/main.js"></script>
   </body>
 </html>
